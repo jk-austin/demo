@@ -10,6 +10,7 @@
               <!-- Current: "bg-gray-900 dark:bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
               <a href="/demo/index.php" aria-current="page" class="<?= urlIs('/demo/index.php') ? 'rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white dark:bg-gray-950/50' : 'rounded-md px-3 py-2 text-sm font-medium text-gray-300' ?> hover:bg-white/5 hover:text-white">Home</a>
               <a href="/demo/about.php" aria-current="page" class="<?= urlIs('/demo/about.php') ? 'rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white dark:bg-gray-950/50' : 'rounded-md px-3 py-2 text-sm font-medium text-gray-300' ?> hover:bg-white/5 hover:text-white">About Us</a>
+              <a href="/demo/notes.php" aria-current="page" class="<?= urlIs('/demo/notes.php') ? 'rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white dark:bg-gray-950/50' : 'rounded-md px-3 py-2 text-sm font-medium text-gray-300' ?> hover:bg-white/5 hover:text-white">Notes</a>
               <a href="/demo/contact.php" aria-current="page" class="<?= urlIs('/demo/contact.php') ? 'rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white dark:bg-gray-950/50' : 'rounded-md px-3 py-2 text-sm font-medium text-gray-300' ?> hover:bg-white/5 hover:text-white">Contact</a>
             </div>
           </div>
