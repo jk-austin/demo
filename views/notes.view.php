@@ -6,7 +6,13 @@
 
 <main>
   <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-    <p class="text-gray-500 dark:text-gray-400">Meet our team.</p>
+    <?php foreach ($notes as $note) : ?>
+        <li class="text-lg text-gray-200">
+          <a href="/demo/note?id=<?= $note["id"] ?>" class="font-bold text-gray-300 hover:underline">  
+        <?= $note["body"] ?>
+      </a>
+    </li>
+    <?php endforeach; ?>
   </div>
 </main>
 

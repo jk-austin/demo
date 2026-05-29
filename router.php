@@ -6,10 +6,11 @@ $routes = [
     "/demo/index.php" => "/controllers/index.php",
     "/demo/about.php" => "/controllers/about.php",
     "/demo/notes.php" => "/controllers/notes.php",
+    "/demo/note.php" => "/controllers/note.php",
     "/demo/contact.php" => "/controllers/contact.php"
 ];
 
-function routeToController($uri, $routes) {
+function routeToController($uri, $routes, $db) {
     if (array_key_exists($uri, $routes)) {
         require __DIR__ . $routes[$uri];
     } else {
@@ -23,4 +24,4 @@ function abort($code = 404) {
     die();
 }
 
-routeToController($uri, $routes);
+routeToController($uri, $routes, $db);

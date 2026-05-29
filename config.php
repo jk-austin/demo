@@ -5,7 +5,7 @@ return [
     "database" => [
         "host" => "localhost",
         "port" => 3306,
-        "dbname" => "jk_coffee",
+        "dbname" => "demo",
         "charset" => "utf8mb4",
     ],
     
