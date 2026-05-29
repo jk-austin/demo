@@ -9,7 +9,7 @@ $heading = "Note";
 
 // $id = $_GET["id"];
 
-$note = $db->query("select * from notes where id = :id", ["id" => $_GET["id"]])->fetch();
+$notes = $db->query("select * from notes where id = :id", ["id" => $_GET["id"]])->fetch();
 
 require __DIR__ . "/../views/note.view.php";
 
