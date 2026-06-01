@@ -1,13 +1,13 @@
-<?php
+<?php require __DIR__ . "/../views/partials/header.php"; ?>
 
+<?php require __DIR__ . "/../views/partials/nav.php"; ?>
 
-/*$config = require __DIR__ . "/../config.php";
-$db = new Database($config["database"]);
-*/
+<?php require __DIR__ . "/../views/partials/banner.php"; ?>
 
-$heading = "My Notes";
+<main>
+  <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <p class="text-lg text-gray-200"><?= $note["body"] ?></p>
+  </div>
+</main>
 
-$notes = $db->query("select * from notes where user_id = ?", [2])->fetchAll();
-
-require __DIR__ . "/../views/notes.view.php";
-
+ <?php require __DIR__ . "/../views/partials/footer.php"; ?>
